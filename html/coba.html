@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Permohonan Tamat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .signature-table td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>SURAT PERMOHONAN TAMAT</h2>
+    
+    <form>
+        <div class="form-section">
+            <label>Nama (Sesuai Ijazah):</label>
+            <input type="text" name="nama">
+
+            <label>Nomor Telepon/HP:</label>
+            <input type="text" name="telepon">
+
+            <label>Email:</label>
+            <input type="email" name="email">
+
+            <label>Jenis Kelamin:</label>
+            <input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki
+            <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+
+            <label>Nomor Induk Mahasiswa:</label>
+            <input type="text" name="nim">
+
+            <label>Nomor Induk Kependudukan:</label>
+            <input type="text" name="nik">
+
+            <label>Fakultas:</label>
+            <select name="fakultas">
+                <option value="">-- Pilih Fakultas --</option>
+                <option value="fakultas1">Fakultas 1</option>
+                <option value="fakultas2">Fakultas 2</option>
+            </select>
+
+            <label>Program Studi Minor:</label>
+            <select name="prodi_minor">
+                <option value="">-- Pilih Prodi --</option>
+                <option value="prodi1">Prodi 1</option>
+                <option value="prodi2">Prodi 2</option>
+            </select>
+
+            <label>Tahun Ajaran:</label>
+            <select name="tahun_ajaran">
+                <option value="2024/2025">Tahun Akademik 2024/2025</option>
+            </select>
+
+            <label>Tanggal Penamatan:</label>
+            <input type="date" name="tanggal_penamatan">
+        </div>
+
+        <div class="form-section">
+            <h4>SISA MATA KULIAH YANG HARUS DIAMBIL</h4>
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Mata Kuliah</th>
+                    <th>Kredit</th>
+                    <th>Nama Dosen Mengajar Paralel</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" name="mata_kuliah1"></td>
+                    <td><input type="text" name="kredit1"></td>
+                    <td><input type="text" name="dosen1"></td>
+                    <td><input type="text" name="keterangan1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" name="mata_kuliah2"></td>
+                    <td><input type="text" name="kredit2"></td>
+                    <td><input type="text" name="dosen2"></td>
+                    <td><input type="text" name="keterangan2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" name="mata_kuliah3"></td>
+                    <td><input type="text" name="kredit3"></td>
+                    <td><input type="text" name="dosen3"></td>
+                    <td><input type="text" name="keterangan3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="text" name="mata_kuliah4"></td>
+                    <td><input type="text" name="kredit4"></td>
+                    <td><input type="text" name="dosen4"></td>
+                    <td><input type="text" name="keterangan4"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-section">
+            <h4>Disetujui oleh:</h4>
+            <table class="signature-table">
+                <tr>
+                    <td>DEKAN</td>
+                    <td>KETUA PRODI</td>
+                    <td>KETUA MINOR</td>
+                    <td>REGISTRAR</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-section">
+            <ol>
+                <li>Permohonan ini harus diisi pada permulaan semester untuk ditamatkan (hari pertama kuliah).</li>
+                <li>Mata kuliah yang dituliskan pada permohonan ini adalah sesuai dengan semua sisa mata kuliah yang harus diambil termasuk incomplete dan subjek perbaikan.</li>
+                <li>Surat Permohonan Tamat ini harus ditandatangani oleh Dekan, Ketua Prodi, dan Ketua Minor masing-masing fakultas dengan melampirkan jadwal mata kuliah yang dikontrak pada semester berjalan.</li>
+                <li>SPT ini dianggap selesai (Sah) apabila sudah dimasukkan di kantor Registrar.</li>
+                <li>Batas pemasukan SPT satu minggu sesudah Add & Drop mata kuliah.</li>
+            </ol>
+        </div>
+
+        <div class="form-section">
+            <label>Upload Surat/Cerfitikat:</label>
+            <input type="file" name="upload">
+
+            <h4>Juga melampirkan Surat/Cerfitikat dibawah ini:</h4>
+            <table>
+                <tr>
+                    <td>Fak. Filsafat</td>
+                    <td>Fak. Ilmu Pendidikan</td>
+                    <td>Fak. Keperuan dan Ilmu Kesehatan</td>
+                    <td>ASMIK</td>
+                </tr>
+                <tr>
+                    <td>Surat Menjual Buku</td>
+                    <td>Sertifikat Oracle & Cisco</td>
+                    <td>Ujian Comprehensive bagi yang belum mengadakan Seminar Nasional & Sidang Skripsi</td>
+                    <td>Menyerahkan Table Panen (minimal 5)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-section">
+            <label>Tanda tangan:</label>
+            <input type="date" name="tanggal">
+            <input type="text" name="nama_mahasiswa" placeholder="Nama Lengkap Mahasiswa">
+        </div>
+    </form>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with New Line in Row</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            /* Allow text wrapping */
+            word-wrap: break-word;
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>This is a long text that should wrap to a new line if it's too long for the cell width.</td>
+    </tr>
+</table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Permohonan Tamat</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: auto; /* Membuat tabel rata kanan */
+            margin-right: 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Diajukan sebagai Surat/Sertifikat dibawah ini:</h3>
+<table>
+    <tr>
+        <th>Fak. Filsafat</th>
+        <th>Fak. Ilmu Komputer</th>
+        <th>Fak. Keperawatan & Ilmu Kesehatan</th>
+        <th>ASMIK</th>
+    </tr>
+    <tr>
+        <td>Surat Menjual Buku</td>
+        <td>Sertifikat Cisco</td>
+        <td>Ujian Comprehensive bagi yang Menunda Skripsi</td>
+        <td>Table Manners (minimal 5)</td>
+    </tr>
+</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Tabel dengan Batas Samping</title>
+    <style>
+        table {
+            width: 50%; /* Mengatur lebar tabel menjadi 50% dari lebar halaman */
+            border: 1px solid black; /* Garis batas tabel */
+            border-collapse: collapse; /* Menggabungkan garis batas */
+        }
+        th, td {
+            border: 1px solid black; /* Garis batas untuk sel */
+            padding: 10px; /* Ruang di dalam sel */
+            text-align: left; /* Teks di rata kiri */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Contoh Tabel dengan Batas Lebar</h2>
+
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Kota</th>
+    </tr>
+    <tr>
+        <td>Marcellino</td>
+        <td>25</td>
+        <td>Jakarta</td>
+    </tr>
+    <tr>
+        <td>Christian</td>
+        <td>30</td>
+        <td>Bandung</td>
+    </tr>
+    <tr>
+        <td>Kawuwung</td>
+        <td>28</td>
+        <td>Surabaya</td>
+    </tr>
+</table>
+
+</body>
+</html>
+<table border="1">
+    <tr>
+        <td padding: "10px">Fak. Filsafat</td>
+    </tr>
+</table>
+</body>
+</html>
+</body>
+</html>
